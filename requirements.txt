@@ -1,0 +1,11 @@
+pandas
+torch==1.4.0
+psycopg2-binary==2.8.5
+numpy==1.18.1
+networkx
+ipdb
+Pillow==9.2.0
+scikit-learn==1.0.2
+scipy==1.7.3
+sqlparse
+re
