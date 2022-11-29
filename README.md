@@ -56,9 +56,9 @@ python3 [-u] pg_train.py [ > runninglog_path/log/txt 2>&1 ]
 For the second search mode, you can run the following command:
 
 ```
-python3 [-u] train_Job.py [> runninglog_path/log/txt 2>&1 ]
+python3 [-u] train_Job.py [> runninglog_path/log.txt 2>&1 ]
 or 
-python3 [-u] train_tpch.py [> runninglog_path/log/txt 2>&1 ]
+python3 [-u] train_tpch.py [> runninglog_path/log.txt 2>&1 ]
 ```
 
 
