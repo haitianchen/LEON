@@ -43,7 +43,7 @@ In our paper,we use two benchmark, JOB and TPC-H, you can get it through the fol
 
 First, you need to modify the log_path, model_path and other parameters in the training code(such as [train_job.py](./train_job.py)), and modify the relevant information required to connect to PostgreSQL in [pg_executor.py](./util/pg_executor.py).
 
-For the dynamic planning search process, we have two implementations. One is based on PostgreSQL itself, which needs to modify its source code; The second is to use Python to simulate the dynamic planning process of PG.
+For ML-aided query optimizer, we have two implementations. One is based on PostgreSQL itself, which needs to modify its source code; The second is to use Python to simulate the dynamic programming of PG.
 
 For the former, you need to use [allpaths.c](./allpaths.c) to replace the corresponding source code file with the same name of PG, and recompile it. The path of the file is **/src/backend/optimizer/path/allpaths.c** 
 
