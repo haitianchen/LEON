@@ -7,7 +7,7 @@ Pytorch implementation of LEON: A New Framework for ML-Aided Query Optimization.
 ### Python Environment
 
 ```
-python3.8.5
+python 3.8.5
 pandas
 torch==1.4.0
 psycopg2-binary==2.8.5
@@ -26,11 +26,10 @@ Run `pip install -r requirements.txt`  to quickly install Python Environment.
 ### PostgreSQL 
 
 Postgres v12.5
+
 pg_hint_plan v1.3.7
 
-
-
-[]: 
+*After installing PostgreSQL and its extension, you need to modify its default configuration that can find in [postgresql.conf](./postgresql.conf)*
 
 ### BenchMark
 
@@ -40,9 +39,11 @@ In our paper,we use two benchmark, JOB and TPC-H, you can get it through the fol
 
 **TPC-H:**  https://github.com/electrum/tpch-dbgen
 
-
-
 ## Usage
+
+First, you need to modify the log_path, model_path and other parameters in the training code(such as [train_job.py](./train_job.py)), and modify the relevant information required to connect to PostgreSQL in [pg_executor.py](./util/pg_executor.py).
+
+
 
 ## Contact
 
