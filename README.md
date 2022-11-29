@@ -2,7 +2,7 @@
 
 Pytorch implementation of LEON: A New Framework for ML-Aided Query Optimization.
 
-### Requirment
+##  Requirment  
 
 ### Python Environment
 
@@ -42,10 +42,10 @@ In our paper,we use two benchmark, JOB and TPC-H, you can get it through the fol
 
 
 
-### Usage
+## Usage
 
-### Contact
+## Contact
 
 
 
-### Reference
+## Reference
