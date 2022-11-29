@@ -43,10 +43,27 @@ In our paper,we use two benchmark, JOB and TPC-H, you can get it through the fol
 
 First, you need to modify the log_path, model_path and other parameters in the training code(such as [train_job.py](./train_job.py)), and modify the relevant information required to connect to PostgreSQL in [pg_executor.py](./util/pg_executor.py).
 
+For the dynamic planning search process, we have two implementations. One is based on PostgreSQL itself, which needs to modify its source code; The second is to use Python to simulate the dynamic planning process of PG.
+
+For the former, you need to use [allpaths.c](./allpaths.c) to replace the corresponding source code file with the same name of PG, and recompile it. *The path of the file is /[src](https://github.com/postgres/postgres/tree/REL_12_STABLE/src)/[backend](https://github.com/postgres/postgres/tree/REL_12_STABLE/src/backend)/[optimizer](https://github.com/postgres/postgres/tree/REL_12_STABLE/src/backend/optimizer)/[path]([postgres/src/backend/optimizer/path at REL_12_STABLE · postgres/postgres (github.com)](https://github.com/postgres/postgres/tree/REL_12_STABLE/src/backend/optimizer/path))/[allpaths.c]([postgres/allpaths.c at REL_12_STABLE · postgres/postgres (github.com)](https://github.com/postgres/postgres/blob/REL_12_STABLE/src/backend/optimizer/path/allpaths.c))* 
+
+Modify the relevant path in the code and start the modified PostgreSQL,Run the following command:
+
+```
+python3 [-u] pg_train.py [ > runninglog_path/log/txt 2>&1 ]
+```
+
+For the second search mode, you can run the following command:
+
+```
+python3 [-u] train_Job.py [> runninglog_path/log/txt 2>&1 ]
+or 
+python3 [-u] train_tpch.py [> runninglog_path/log/txt 2>&1 ]
+```
+
 
 
 ## Contact
 
+If you have any questions about the code, please email [XUCHEN.2019@outlook.com](mailto:XUCHEN.2019@outlook.com), [HaiTian_Chen@outlook.com](mailto:HaiTian_Chen@outlook.com)
 
-
-## Reference
