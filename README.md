@@ -36,13 +36,9 @@ pg_hint_plan v1.3.7
 
 In our paper,we use two benchmark, JOB and TPC-H, you can get it through the following link.
 
-**Join-order-benchmark** 		
+**Join-order-benchmark:** 	https://github.com/gregrahn/join-order-benchmark
 
-[https://github.com/gregrahn/join-order-benchmark]: Join-order-benckmark
-
-**TPC-H** 
-
-[https://github.com/electrum/tpch-dbgen]: 	"TPC-H"
+**TPC-H:**  https://github.com/electrum/tpch-dbgen
 
 
 
