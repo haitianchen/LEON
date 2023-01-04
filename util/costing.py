@@ -56,7 +56,7 @@ class PostgresCost(CostModel):
         hint_str = node.hint_str(with_physical_hints=p.cost_physical_ops)
         hashstr = hint_str + sql_str
         cost = costCache.get(hashstr)
-        cost = 1
+       # cost = 1
         if cost == None:
             cost = postgres.GetCostFromPg(
                 sql=sql_str,
