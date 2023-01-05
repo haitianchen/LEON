@@ -2002,8 +2002,6 @@ class DynamicProgramming(object):
                         join_conds = join.KeepRelevantJoins(all_join_conds)
                         join.info["join_conds"] = join_conds
                         cost, sql, hint = self.cost_model.getCost_cache(join, join_conds, costCache)
-                        if level > num_rels - 4:
-                            cost = 1
                         join.info["cost"] = cost
                         logcost = math.log(cost)
                         data = encoding.getencoding_Balsa(sql, hint, workload)
