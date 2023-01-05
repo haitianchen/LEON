@@ -2908,8 +2908,6 @@ class DynamicProgramming(object):
                         join.info["join_conds"] = join_conds
                         join.info["join_ids"] = join_ids
                         cost, sql, hint = self.cost_model.getCost_cache(join, join_conds, costCache)
-                        if level > num_rels - 4:
-                            cost = 1
                         join.info["cost"] = cost
                         logcost = math.log(cost)
                         dp_costs.append(logcost)
