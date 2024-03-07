@@ -1,4 +1,10 @@
 # LEON: A New Framework for ML-Aided Query Optimization
+---
+
+**News**
+
+* 🎉  LEON has been accepted to VLDB 2023. Meanwhile, the LEON project undergoes notable enhancements. For detailed information, please visit the following link: [LeonProject](https://github.com/Thisislegit/LeonProject). Subsequent updates will also be conducted through this repository.
+---
 
 Pytorch implementation of LEON: A New Framework for ML-Aided Query Optimization.
 
